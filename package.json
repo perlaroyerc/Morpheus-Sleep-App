@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve",
+    "webpack": "webpack serve",
     "start": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"webpack serve\" \"nodemon server/server.js\" \"npm run client\"",
     "build": "webpack"
   },
   "repository": {
@@ -20,14 +22,21 @@
   },
   "homepage": "https://github.com/perlaroyerc/Solo-Project#readme",
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.3",
     "axios": "^0.27.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.2.1",
     "express": "^4.18.1",
     "html-webpack-plugin": "^5.5.0",
+    "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.16",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-select": "^5.3.2",
     "style-loader": "^3.3.1"
   },
   "devDependencies": {
