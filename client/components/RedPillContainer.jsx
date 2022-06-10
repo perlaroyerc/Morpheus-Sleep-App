@@ -1,23 +1,21 @@
 
-//sleep- alarm timer
-//sleep notes
-import {Component} from 'react';
 import React from 'react';
 import AlarmClock from './AlarmClock.jsx';
-import Notes from './SleepNotes.jsx';
+import NotesDisplay from './SleepNotes';
+import '../App.scss';
 
-
-class RedPillContainer extends Component {
-    constructor(props) {
-      super(props);
-    }
+class RedPillContainer extends React.Component {
+  
     render() {
-        <div className='left box'>
-        <h1> Red Pill</h1>
+      return (
+        <div className='leftBox'>
+        <h1 id= 'redPill'>Red Pill</h1>
+
         <AlarmClock /> 
         <NotesDisplay />
 
         </div>
+      )
     }
 };
 

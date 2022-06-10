@@ -1,20 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fira+Sans:ital,wght@0,200;0,400;1,100&family=Open+Sans:wght@300&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+*{
+
+    margin: 0;
+}
+
+
 body {
 
-    background-color: gray;
+    background-color: black;
 }
 
 #header{
 
     width: 100vw;
     color: white;
-    background-color:black;
-    margin-left: -2rem;
+    background-color:rgb(44, 42, 42);
     padding: 1rem 2rem;
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+.navBar{
+    width: 100vw;
+    padding: 1rem;
+    background-color: gray;
+    height: 60%;
+    display: flex;
+    align-items: right;
+    font-size: 1rem;
+    grid-gap: 30px;
+    text-align: center;
+
+
+    .home{
+        font-family: 'Fira Sans', sans-serif;
+        // font-family: 'Quicksand', sans-serif;
+        color: white;
+    
+    }
+
+    .about{
+        font-family: 'Fira Sans', sans-serif;
+        color: white;
+    }
+
+    .userLogin{
+        font-family: 'Fira Sans', sans-serif;
+        color: white;
+    }
+
+    .signUp{
+        font-family: 'Fira Sans', sans-serif;
+        color: white;
+    }
+
+}
+
+.mainBox{
+    padding: 1.5rem;
+    padding-left: 12rem;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 20px;
+
+
+    #redPill{
+        font-family: 'Noto Sans KR', sans-serif;
+        flex: 1;
+        margin-right:20px;
+        background-color: black;
+        color: white;
+
+    }
+
+    .notes{
+        font-family: 'Barlow Condensed', sans-serif;
+      
+        color: white;
+    }   
+
+    #bluePill{
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-right:20px;
+        flex: 1;
+        background-color: black;
+        color: white;
+
+        a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 1rem;;
+            &:hover {
+              background-color: #111;
+            }
+        }
+    }
+
+  
+    .alarm{
+        font-family: 'Barlow Condensed', sans-serif;
+      
+        color: white;
+    }
+    .countdown{
+        font-family: 'Barlow Condensed', sans-serif;
+       
+        color: white;
+    }
+    .message{
+        font-family: 'Barlow Condensed', sans-serif;
+        color: white;
+    }
+
+
+}
+
+
+
 
 
 

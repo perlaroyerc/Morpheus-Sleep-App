@@ -6,8 +6,6 @@ import  App from './App'; //*** */
 
 
 render (
-   
-    // <React.StrictMode>  {/* </React.StrictMode> ,  */}
         <App/> , document.getElementById('app')
 );
 
